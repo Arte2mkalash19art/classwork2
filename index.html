@@ -18,18 +18,18 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <div class="container header-position">
         <nav class="navigation">
           <a href="/" class="logo"
             ><span class="logo-web">Web</span><span class="logo-studio">Studio</span>
           </a>
           <ul class="list">
-            <li class="list-item"><a href="">Студія</a></li>
-            <li class="list-item"><a href="">Портфоліо</a></li>
-            <li class="list-item"><a href="">Контакти</a></li>
+            <li class="list-item"><a class="item-link" href="">Студія</a></li>
+            <li class="list-item"><a class="item-link" href="">Портфоліо</a></li>
+            <li class="list-item"><a class="item-link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list-contacs">
+        <ul class="list-contacts">
           <li class="menu-contact">
             <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -42,7 +42,7 @@
     <main>
       <!-- Section hero -->
       <section class="hero">
-        <div class="container header-position">
+        <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-btn" type="button">Замовити послугу</button>
         </div>
@@ -58,6 +58,24 @@
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="advantages-desc">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">ПЛАНУВАННЯ</h3>
+              <p class="advantages-desc">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="advantages-item">
+              <h3 class="advantages-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="advantages-desc">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
           </ul>
         </div>
       </section>
@@ -66,48 +84,67 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="we-du-list">
-            <li class="we-du-item"><img src="" alt="" /></li>
-            <li class="we-du-item"><img src="" alt="" /></li>
-            <li class="we-du-item"><img src="" alt="" /></li>
+            <li class="we-du-item">
+              <img src="./images/coding.jpg" alt="photo-coding" height="294" width="370" />
+            </li>
+            <li class="we-du-item">
+              <img src="./images/design.jpg" alt="photo-design" height="294" width="370" />
+            </li>
+            <li class="we-du-item">
+              <img src="./images/style.jpg" alt="photo-style,colors" height="294" width="370" />
+            </li>
           </ul>
         </div>
       </section>
       <!--Наша команда-->
-      <section class="section">
+      <section class="section color-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="" alt="" width="270" height="260" />
-              <h3 class="team-name">Ігор Дем'яненко</h3>
-              <p class="team-position">Product Designer</p>
+              <img src="./images/ihor-demyanenko.jpg" alt="photo-ihora" width="270" height="260" />
+              <div class="card-box">
+                <h3 class="team-name">Ігор Дем'яненко</h3>
+                <p class="team-position">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
-              <img src="" alt="" width="270" height="260" />
-              <h3 class="team-name">Ольга Рєпіна</h3>
-              <p class="team-position">Frontend Developer</p>
+              <img src="./images/olga-repina.jpg" alt="photo-olga" width="270" height="260" />
+              <div class="card-box">
+                <h3 class="team-name">Ольга Рєпіна</h3>
+                <p class="team-position">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
-              <img src="" alt="" width="270" height="260" />
-              <h3 class="team-name">Микола Тарасов</h3>
-              <p class="team-position">Marketing</p>
+              <img src="./images/mykola-tarasov.jpg" alt="photo-mykola" width="270" height="260" />
+              <div class="card-box">
+                <h3 class="team-name">Микола Тарасов</h3>
+                <p class="team-position">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
-              <img src="" alt="" width="270" height="260" />
-              <h3 class="team-name">Михайло Єрмаков</h3>
-              <p class="team-position">UI Designer</p>
+              <img
+                src="./images/mykhailo-yermakov.jpg"
+                alt="photo-mykhailo"
+                width="270"
+                height="260"
+              />
+              <div class="card-box">
+                <h3 class="team-name">Михайло Єрмаков</h3>
+                <p class="team-position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <a href="/" class="logo">
           <span class="logo-web-footer">Web</span><span class="logo-studio-footer">Studio</span>
         </a>
         <address>
-          <p>м. Київ, пр-т Лесі Українки, 26</p>
+          <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="footer-contacs-list">
             <li class="footer-contacs-item">
               <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
