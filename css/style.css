@@ -1,5 +1,5 @@
 body {
-  font-family: 'Robobto' 'Raleway';
+  font-family: 'Robobto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -64,7 +64,6 @@ p {
 
 .item-link {
   color: #212121;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -81,7 +80,6 @@ p {
 
 .header-contact {
   color: #757575;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -93,6 +91,15 @@ p {
 
 .menu-contact + .menu-contact {
   margin-left: 50px;
+}
+
+.icon-header {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.header-contact:hover .icon-header {
+  fill: #2196f3;
 }
 
 .logo {
@@ -116,6 +123,7 @@ p {
     url('../images/section-hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -139,11 +147,11 @@ p {
   margin-top: 30px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  cursor: pointer;
 }
 
 .advantages {
@@ -157,7 +165,6 @@ p {
 
 .advantages-title {
   color: #212121;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -166,16 +173,28 @@ p {
 .advantages-desc {
   margin-top: 10px;
   color: #757575;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
 
+.icon-andvantages {
+  width: 70px;
+  height: 70px;
+}
+
+.iconbox {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
 .section-title {
   color: #212121;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
@@ -193,11 +212,26 @@ p {
 .team-list {
   display: flex;
   column-gap: 30px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .card-box {
-  padding: 30px 60px;
+  padding: 30px 32px;
+}
+
+.team-name {
+  color: #212121;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.team-position {
+  color: #757575;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.48px;
 }
 
 .team-item {
@@ -207,13 +241,61 @@ p {
   background-color: white;
 }
 
+.media-list {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 16px;
+}
+
+.media-item {
+  width: 44px;
+  height: 44px;
+}
+
+.icon {
+  fill: white;
+}
+
+.icon:hover {
+  fill: #2196f3;
+}
+
 .color-section {
   background: #f5f4fa;
+}
+
+.client-list {
+  display: flex;
+  margin-bottom: 94px;
+  justify-content: space-between;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+  outline: 1px solid #afb1b8;
+  cursor: pointer;
+}
+
+.client-logo {
+  width: 106px;
+  height: 60px;
+  margin: 16px 32px;
+  fill: #afb1b8;
+}
+
+.client-item:hover .client-logo {
+  fill: #2196f3;
+}
+
+.client-item:hover {
+  outline: 1px solid #2196f3;
 }
 
 .footer {
   background: #2f303a;
   padding: 60px 0;
+  display: flex;
 }
 
 .logo-web-footer {
@@ -232,7 +314,6 @@ p {
 
 .address {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
@@ -241,8 +322,20 @@ p {
 
 .footer-contact {
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Roboto';
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
+}
+
+.flex {
+  display: flex;
+}
+
+.media-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-top: 8px;
 }
