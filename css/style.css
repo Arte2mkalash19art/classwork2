@@ -312,6 +312,14 @@ p {
   row-gap: 9px;
 }
 
+.icon-footer {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer:hover {
+  fill: #2196f3;
+}
+
 .address {
   color: #fff;
   font-size: 14px;
@@ -338,4 +346,16 @@ p {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-top: 8px;
+}
+
+.media-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.footer-media-list {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 20px;
 }
