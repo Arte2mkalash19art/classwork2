@@ -272,11 +272,13 @@ p {
 }
 
 .icon {
-  fill: white;
+  fill: #afb1b8;
 }
 
 .icon:hover {
-  fill: #2196f3;
+  background-color: #2196f3;
+  border-radius: 50%;
+  fill: white;
 }
 
 .color-section {
