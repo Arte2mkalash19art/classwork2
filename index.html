@@ -24,7 +24,9 @@
             ><span class="logo-web">Web</span><span class="logo-studio">Studio</span>
           </a>
           <ul class="list">
-            <li class="list-item"><a class="item-link" href="">Студія</a></li>
+            <li class="list-item">
+              <button class="item-link data-modal-open">Студія</button>
+            </li>
             <li class="list-item"><a class="item-link" href="">Портфоліо</a></li>
             <li class="list-item"><a class="item-link" href="">Контакти</a></li>
           </ul>
@@ -378,5 +380,35 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="model">
+        <button class="button-close-model data-modal-close">
+          <svg width="30" height="30">
+            <use href="./icons"></use>
+          </svg>
+        </button>
+        <h3 class="form-h3">Залиште свої дані, ми вам передзвонимо</h3>
+        <form action="">
+          <div class="model-form-fill">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="model-form-fill">
+            <label for="telephone">Телефон</label>
+            <input type="text" id="telephone" />
+          </div>
+          <div class="model-form-fill">
+            <label for="Email">Пошта</label>
+            <input type="text" id="Email" />
+          </div>
+          <div class="model-form-fill">
+            <label for="textarea">Коментар</label>
+            <textarea name="textarea" id="textarea" placeholder="Введіть текст"></textarea>
+          </div>
+          <button class="btn-form">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/model.js"></script>
   </body>
 </html>
