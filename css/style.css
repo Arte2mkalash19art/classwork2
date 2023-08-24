@@ -393,6 +393,7 @@ button {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-top: 8px;
+  margin-bottom: 20px;
 }
 
 .media-box {
@@ -404,7 +405,48 @@ button {
 .footer-media-list {
   display: flex;
   column-gap: 10px;
-  margin-top: 20px;
+}
+
+.footer-media-list:last-child {
+  column-gap: 12px;
+}
+
+.media-form {
+  margin-left: 93px;
+}
+
+.media-input-email {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: inherit;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+}
+
+.media-link {
+  border-radius: 4px;
+  background: #2196f3;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  display: inline-block;
+  padding-left: 28px;
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  position: relative;
+}
+
+.footer-media-icon-send {
+  top: 13px;
+  right: 28px;
+  position: absolute;
 }
 
 /*модальне вікно*/
