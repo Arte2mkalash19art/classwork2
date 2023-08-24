@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header class="header">
@@ -25,7 +26,7 @@
           </a>
           <ul class="list">
             <li class="list-item">
-              <button class="item-link data-modal-open">Студія</button>
+              <a href="/" class="item-link">Студія</a>
             </li>
             <li class="list-item"><a class="item-link" href="">Портфоліо</a></li>
             <li class="list-item"><a class="item-link" href="">Контакти</a></li>
@@ -55,9 +56,67 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button">Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+          <button type="button" class="button-close-modal" data-modal-close>
+            <svg class="modal-icon-close" fill="none" width="30" height="30">
+              <use href="./icons/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h3 class="form-h3">Залиште свої дані, ми вам передзвонимо</h3>
+          <form autocomplete="on">
+            <div class="modal-form-fill">
+              <label for="name">Ім'я</label>
+              <div class="input-wrapper">
+                <input type="text" id="name" name="name" />
+                <svg class="modal-icon-input" width="18px" height="18px">
+                  <use href="./icons/symbol-defs.svg#icon-person-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-fill">
+              <label for="telephone">Телефон</label>
+              <div class="input-wrapper">
+                <input type="text" id="telephone" name="phone" />
+                <svg class="modal-icon-input" width="18px" height="18px">
+                  <use href="./icons/symbol-defs.svg#icon-phone-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-fill">
+              <label for="Email">Пошта</label>
+              <div class="input-wrapper">
+                <input type="email" id="Email" name="email" />
+                <svg class="modal-icon-input" width="18px" height="18px">
+                  <use href="./icons/symbol-defs.svg#icon-email-black"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-fill">
+              <label for="textarea">Коментар</label>
+              <textarea
+                class="comment-area"
+                name="textarea"
+                id="textarea"
+                placeholder="Введіть текст"
+                width="448"
+                height="120"
+              ></textarea>
+            </div>
+            <div class="form-field-check">
+              <input id="input-check" type="checkbox" />
+              <label for="input-check" class="modal-text"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="modal-link" href="/">Умови договору</a></label
+              >
+            </div>
+            <button type="submit" class="btn-form">Відправити</button>
+          </form>
+        </div>
+      </div>
       <!-- Наші особливості -->
       <section class="section">
         <div class="container">
@@ -380,35 +439,6 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
-      <div class="model">
-        <button class="button-close-model data-modal-close">
-          <svg width="30" height="30">
-            <use href="./icons"></use>
-          </svg>
-        </button>
-        <h3 class="form-h3">Залиште свої дані, ми вам передзвонимо</h3>
-        <form action="">
-          <div class="model-form-fill">
-            <label for="name">Ім'я</label>
-            <input type="text" id="name" />
-          </div>
-          <div class="model-form-fill">
-            <label for="telephone">Телефон</label>
-            <input type="text" id="telephone" />
-          </div>
-          <div class="model-form-fill">
-            <label for="Email">Пошта</label>
-            <input type="text" id="Email" />
-          </div>
-          <div class="model-form-fill">
-            <label for="textarea">Коментар</label>
-            <textarea name="textarea" id="textarea" placeholder="Введіть текст"></textarea>
-          </div>
-          <button class="btn-form">Відправити</button>
-        </form>
-      </div>
-    </div>
-    <script src="./js/model.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

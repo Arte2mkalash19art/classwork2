@@ -418,7 +418,7 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.model {
+.modal {
   position: absolute;
   width: 528px;
   height: 581px;
@@ -437,12 +437,34 @@ button {
   pointer-events: none;
 }
 
-.button-close-model {
+.button-close-modal {
   width: 30px;
   height: 30px;
   position: absolute;
   top: 8px;
   right: 8px;
+  background-color: inherit;
+  border: none;
+  fill: #0000001a;
+}
+
+.modal-icon-close {
+  fill: black;
+}
+
+.modal-icon-close:hover {
+  fill: #2196f3;
+  cursor: pointer;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.modal-icon-input {
+  position: absolute;
+  top: 11px;
+  left: 12px;
 }
 
 .form-h3 {
@@ -451,23 +473,71 @@ button {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.6px;
+  margin: 2px 0 12px;
 }
 
-.model-form-fill input {
+.modal-form-fill input:hover,
+.modal-form-fill textarea:hover {
+  border-color: #2196f3;
+}
+
+.modal-form-fill textarea:hover::placeholder {
+  color: #2196f3;
+}
+
+.modal-form-fill textarea:focus::placeholder {
+  color: #757575;
+}
+
+.modal-form-fill input {
   width: 448px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 42px;
 }
 
-.model-form-fill label {
+.modal-link {
+  color: #2196f3;
+  text-decoration-line: underline;
+}
+
+.modal-text {
+  color: #757575;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  cursor: auto;
+}
+
+.modal-form-fill label {
   color: #757575;
   font-size: 12px;
   letter-spacing: 0.12px;
   display: block;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.comment-area {
+  padding: 12px 16px;
+  width: 448px;
+  height: 120px;
+  resize: none;
+}
+
+.form-field-check {
+  margin: 20px 0 30px;
+}
+
+.form-field-check input {
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
 }
 
 .btn-form {
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -480,4 +550,9 @@ button {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  cursor: pointer;
+}
+
+.modal-form-fill + .modal-form-fill {
+  margin-top: 14px;
 }
