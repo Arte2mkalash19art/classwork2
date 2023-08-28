@@ -565,6 +565,7 @@ button {
   width: 448px;
   height: 120px;
   resize: none;
+  overflow: auto;
 }
 
 .form-field-check {
