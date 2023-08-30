@@ -507,6 +507,11 @@ button {
   position: absolute;
   top: 11px;
   left: 12px;
+  fill: black;
+}
+
+.input-wrapper:hover .modal-icon-input {
+  fill: #188ce8;
 }
 
 .form-h3 {
