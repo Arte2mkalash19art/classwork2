@@ -81,8 +81,13 @@ button {
   position: relative;
 }
 
-.item-link:hover::after,
-.item-link:focus::after {
+.studio::after,
+.studio:hover::after,
+.studio:focus::after,
+.portfolio:hover::after,
+.portfolio:focus::after,
+.contacts:hover::after,
+.contacts:focus::after {
   content: '';
   width: 100%;
   height: 4px;
