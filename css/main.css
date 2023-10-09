@@ -217,45 +217,6 @@ body {
   margin-top: 14px;
 }
 
-.advantages {
-  display: none;
-}
-
-.advantages-list {
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-
-.advantages-title {
-  color: #212121;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.42px;
-}
-
-.advantages-desc {
-  margin-top: 10px;
-  color: #757575;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-}
-
-.icon-andvantages {
-  width: 70px;
-  height: 70px;
-}
-
-.iconbox {
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  padding: 25px 100px;
-  margin-bottom: 30px;
-}
-
 .section-title {
   color: #212121;
   text-align: center;
@@ -267,6 +228,43 @@ body {
   padding-bottom: 50px;
 }
 
+.advantages {
+  display: none;
+}
+
+.advantages-list {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.advantages-list .advantages-list__item .iconbox {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+.advantages-list .advantages-list__item .iconbox .icon-andvantages {
+  width: 70px;
+  height: 70px;
+}
+.advantages-list .advantages-list__item .advantages-list__title {
+  color: #212121;
+  font-family: "Robobto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+}
+.advantages-list .advantages-list__item .advantages-list__desc {
+  margin-top: 10px;
+  color: #757575;
+  font-family: "Robobto", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
 .we-du-list {
   display: flex;
   -moz-column-gap: 30px;
@@ -274,13 +272,13 @@ body {
   padding-bottom: 94px;
 }
 
-.we-du-item {
+.we-du-list__item {
   position: relative;
 }
 
-.we-du-text {
-  padding-top: 27px;
+.we-du-list__text {
   position: absolute;
+  font-family: "Robobto", sans-serif;
   bottom: 4px;
   color: #fff;
   text-align: center;
@@ -288,6 +286,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  padding-top: 27px;
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -303,33 +302,35 @@ body {
        column-gap: 30px;
   padding-bottom: 94px;
 }
-.team-list .team-item {
+.team-list .team-list__item {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: white;
 }
-.team-list .team-item .card-box {
+.team-list .team-list__item .card-box {
   padding: 30px 32px;
 }
-.team-list .team-item .card-box .team-name {
+.team-list .team-list__item .card-box .team-name {
   color: #212121;
   text-align: center;
+  font-family: "Robobto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
 }
-.team-list .team-item .card-box .team-position {
+.team-list .team-list__item .card-box .team-position {
   color: #757575;
   text-align: center;
+  font-family: "Robobto", sans-serif;
   font-size: 16px;
   letter-spacing: 0.48px;
   margin-top: 10px;
 }
-.team-list .team-item .card-box .icon {
+.team-list .team-list__item .card-box .icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-list .team-item .card-box .icon:hover {
+.team-list .team-list__item .card-box .icon:hover {
   background-color: #2196f3;
   border-radius: 50%;
   fill: white;
@@ -340,7 +341,7 @@ body {
        column-gap: 10px;
   margin-top: 16px;
 }
-.team-list .media-list .media-item {
+.team-list .media-list .media-list__item {
   width: 44px;
   height: 44px;
 }
@@ -350,19 +351,19 @@ body {
   margin-bottom: 94px;
   justify-content: space-between;
 }
-.client-list .client-item {
+.client-list .client-list__item {
   width: 170px;
   height: 92px;
   outline: 1px solid #afb1b8;
   cursor: pointer;
 }
-.client-list .client-item:hover .client-logo {
+.client-list .client-list__item:hover .client-logo {
   fill: #2196f3;
 }
-.client-list .client-item:hover {
+.client-list .client-list__item:hover {
   outline: 1px solid #2196f3;
 }
-.client-list .client-item .client-logo {
+.client-list .client-list__item .client-logo {
   width: 106px;
   height: 60px;
   margin: 16px 32px;
@@ -425,10 +426,10 @@ body {
 }
 .nav-list .nav-list__item__link {
   color: #212121;
+  font-family: "Robobto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
-  background-color: none;
   border: none;
   cursor: pointer;
   transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
