@@ -13,20 +13,14 @@
       padding: 30px 32px;
 
       .team-name {
+        @extend %team-list__font-style;
         color: #212121;
-        text-align: center;
-        font-family: $team-list__font-family;
-        font-size: 16px;
         font-weight: 500;
-        letter-spacing: 0.48px;
       }
 
       .team-position {
+        @extend %team-list__font-style;
         color: #757575;
-        text-align: center;
-        font-family: $team-list__font-family;
-        font-size: 16px;
-        letter-spacing: 0.48px;
         margin-top: 10px;
       }
 

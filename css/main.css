@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -32,6 +36,13 @@ body {
   letter-spacing: 0.03em;
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.team-list .team-list__item .card-box .team-position, .team-list .team-list__item .card-box .team-name {
+  text-align: center;
+  font-family: "Robobto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.48px;
 }
 
 .hero-btn {
@@ -312,18 +323,10 @@ body {
 }
 .team-list .team-list__item .card-box .team-name {
   color: #212121;
-  text-align: center;
-  font-family: "Robobto", sans-serif;
-  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.48px;
 }
 .team-list .team-list__item .card-box .team-position {
   color: #757575;
-  text-align: center;
-  font-family: "Robobto", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.48px;
   margin-top: 10px;
 }
 .team-list .team-list__item .card-box .icon {
