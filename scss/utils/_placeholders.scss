@@ -1,6 +1,7 @@
-%team-list__font-style {
+@mixin team-list__font-style($color) {
   text-align: center;
   font-family: $team-list__font-family;
   font-size: 16px;
   letter-spacing: 0.48px;
+  color: $color;
 }
