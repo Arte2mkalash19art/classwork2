@@ -5,12 +5,3 @@ $team-list__font-family: 'Robobto', sans-serif;
 $advantages-list__font-family: 'Robobto', sans-serif;
 $nav-list__font-family: 'Robobto', sans-serif;
 $icon-color: #afb1b8;
-$images: 'coding', 'design';
-
-/*@each $image in $images {
-  .icon-#{$image} {
-    background: url('../images/#{$image}.jpg');
-  }
-}
-тренування
-*\

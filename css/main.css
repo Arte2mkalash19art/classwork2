@@ -29,7 +29,7 @@ button {
 }
 
 body {
-  font-family: 'Robobto', sans-serif;
+  font-family: "Robobto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -75,8 +75,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 40px;
 }
@@ -240,7 +239,7 @@ body {
 .advantages-list {
   display: flex;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
 }
 .advantages-list .advantages-list__item .iconbox {
   width: 270px;
@@ -256,7 +255,7 @@ body {
 }
 .advantages-list .advantages-list__item .advantages-list__title {
   color: #212121;
-  font-family: 'Robobto', sans-serif;
+  font-family: "Robobto", sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.42px;
@@ -264,7 +263,7 @@ body {
 .advantages-list .advantages-list__item .advantages-list__desc {
   margin-top: 10px;
   color: #757575;
-  font-family: 'Robobto', sans-serif;
+  font-family: "Robobto", sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
@@ -273,7 +272,7 @@ body {
 .we-du-list {
   display: flex;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
   padding-bottom: 94px;
 }
 
@@ -283,7 +282,7 @@ body {
 
 .we-du-list__text {
   position: absolute;
-  font-family: 'Robobto', sans-serif;
+  font-family: "Robobto", sans-serif;
   bottom: 4px;
   color: #fff;
   text-align: center;
@@ -304,13 +303,12 @@ body {
 .team-list {
   display: flex;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
   padding-bottom: 94px;
 }
 .team-list .team-list__item {
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: white;
 }
 .team-list .team-list__item .card-box {
@@ -318,7 +316,7 @@ body {
 }
 .team-list .team-list__item .card-box .team-name {
   text-align: center;
-  font-family: 'Robobto', sans-serif;
+  font-family: "Robobto", sans-serif;
   font-size: 16px;
   letter-spacing: 0.48px;
   color: #212121;
@@ -326,7 +324,7 @@ body {
 }
 .team-list .team-list__item .card-box .team-position {
   text-align: center;
-  font-family: 'Robobto', sans-serif;
+  font-family: "Robobto", sans-serif;
   font-size: 16px;
   letter-spacing: 0.48px;
   color: #757575;
@@ -344,7 +342,7 @@ body {
 .team-list .media-list {
   display: flex;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
   margin-top: 16px;
 }
 .team-list .media-list .media-list__item {
@@ -361,6 +359,7 @@ body {
   width: 170px;
   height: 92px;
   outline: 1px solid #afb1b8;
+  border-radius: 4px;
   cursor: pointer;
 }
 .client-list .client-list__item:hover .client-logo {
@@ -383,8 +382,7 @@ body {
 
 .hero {
   padding: 200px 0;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/section-hero.jpg');
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/section-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 94px;
@@ -400,7 +398,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -433,7 +431,7 @@ body {
 }
 .nav-list .nav-list__item__link {
   color: #212121;
-  font-family: 'Robobto', sans-serif;
+  font-family: "Robobto", sans-serif;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
@@ -441,8 +439,7 @@ body {
   cursor: pointer;
   transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-list .nav-list__item__link:hover::after,
-.nav-list .nav-list__item__link:focus::after {
+.nav-list .nav-list__item__link:hover::after, .nav-list .nav-list__item__link:focus::after {
   transform: scale(1);
 }
 .nav-list .nav-list__item__link:hover {
@@ -454,7 +451,7 @@ body {
 
 .studio::after,
 .nav-list__item__link::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 44px;
   left: 0;
@@ -495,7 +492,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
@@ -508,7 +505,7 @@ body {
 }
 
 .footer {
-  background: #2f303a;
+  background: #2f303f;
   padding: 60px 0;
   display: flex;
 }
@@ -573,12 +570,12 @@ body {
 .footer-media-list {
   display: flex;
   -moz-column-gap: 10px;
-  column-gap: 10px;
+       column-gap: 10px;
 }
 
 .footer-media-list:last-child {
   -moz-column-gap: 12px;
-  column-gap: 12px;
+       column-gap: 12px;
 }
 
 .media-form {
@@ -617,4 +614,85 @@ body {
   top: 13px;
   right: 28px;
   position: absolute;
-} /*# sourceMappingURL=main.css.map */
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+  }
+  .section {
+    padding: 0;
+  }
+  .nav-list,
+  .list-contacts,
+  .we-du-list,
+  .section-title__hidden {
+    display: none;
+  }
+  .hero {
+    padding: 60px 0;
+    margin-bottom: 60px;
+  }
+  .hero-title {
+    max-width: 360px;
+    font-size: 26px;
+  }
+  .advantages-list {
+    flex-wrap: wrap;
+  }
+  .advantages-list .advantages-list__item .iconbox {
+    width: 100%;
+    padding: 25px 40%;
+  }
+  .team-list {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .team-list__item img {
+    width: 100%;
+    height: 100%;
+  }
+  .team-list .team-list__item {
+    width: 100%;
+    height: 100%;
+  }
+  .media-list {
+    justify-content: center;
+  }
+  .client-list {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .address-container {
+    display: block;
+    text-align: center;
+  }
+  .flex {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 60px;
+  }
+  .footer-media-list {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .media-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .media-form {
+    margin: 0;
+    text-align: center;
+  }
+  .media-input-email {
+    margin: 0 15px;
+    width: 100%;
+  }
+  .media-link {
+    margin: 0 auto;
+    padding-left: 31px;
+    text-align: left;
+  }
+}/*# sourceMappingURL=main.css.map */
