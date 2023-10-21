@@ -617,6 +617,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
   .container {
     max-width: 480px;
     padding: 0 15px;
@@ -639,7 +642,8 @@ body {
     font-size: 26px;
   }
   .advantages-list {
-    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 30px;
   }
   .advantages-list .advantages-list__item .iconbox {
     width: 100%;
@@ -694,5 +698,19 @@ body {
     margin: 0 auto;
     padding-left: 31px;
     text-align: left;
+  }
+  .modal {
+    margin: 0 15px;
+    max-width: 450px;
+    height: 609px;
+  }
+  .modal-form-fill input {
+    max-width: 370px;
+  }
+  .comment-area {
+    max-width: 370px;
+  }
+  .modal-text {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */
