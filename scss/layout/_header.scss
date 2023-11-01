@@ -15,22 +15,6 @@
   align-items: center;
 }
 
-.menu-btn-open {
-  display: none;
-  width: 40px;
-  height: 40px;
-  background-color: inherit;
-  border: none;
-  margin-left: auto;
-
-  .icon-menu-open {
-    fill: black;
-    &:focus {
-      fill: $hover-color;
-    }
-  }
-}
-
 .nav-list {
   display: flex;
   justify-content: space-between;
