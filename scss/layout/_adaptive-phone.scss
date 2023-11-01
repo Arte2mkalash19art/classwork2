@@ -23,6 +23,61 @@
     padding-top: 60px;
   }
 
+  //header
+
+  .btn_modal_label {
+    display: block;
+    position: relative;
+    right: 23px;
+  }
+
+  .btn_modal_line,
+  .btn_modal_line::before,
+  .btn_modal_line::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #212121;
+    transition: 600ms;
+  }
+
+  .btn_modal_line::before {
+    top: -8px;
+  }
+  .btn_modal_line::after {
+    top: 8px;
+  }
+
+  .btn_modal:checked ~ .btn_modal_label .btn_modal_line {
+    transform: rotate(-45deg);
+  }
+  .btn_modal:checked ~ .btn_modal_label .btn_modal_line::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .btn_modal:checked ~ .btn_modal_label .btn_modal_line::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 48px;
+    background-color: #fff;
+  }
+
+  .btn_modal:checked ~ .navigation .nav-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 32px;
+  }
+
   //sectoin hero
   .hero {
     padding: 60px 0;

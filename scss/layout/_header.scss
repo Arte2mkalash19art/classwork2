@@ -6,6 +6,7 @@
 
 .header-position {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -108,4 +109,9 @@
   .logo-studio {
     color: black;
   }
+}
+
+.btn_modal_label,
+.btn_modal {
+  display: none;
 }

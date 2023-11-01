@@ -50,6 +50,10 @@
             >
           </li>
         </ul>
+        <input type="checkbox" id="toggle" class="btn_modal" />
+        <label for="toggle" class="btn_modal_label">
+          <span class="btn_modal_line"></span>
+        </label>
       </div>
     </header>
     <main>
@@ -72,7 +76,7 @@
             <div class="modal-form-fill">
               <label for="name">Ім'я</label>
               <div class="input-wrapper">
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" required autocomplete="name" />
                 <svg class="modal-icon-input" width="18px" height="18px">
                   <use href="./icons/symbol-defs.svg#icon-person-black"></use>
                 </svg>
@@ -81,7 +85,7 @@
             <div class="modal-form-fill">
               <label for="telephone">Телефон</label>
               <div class="input-wrapper">
-                <input type="text" id="telephone" name="phone" required />
+                <input type="text" id="telephone" name="phone" required autocomplete="cc-number" />
                 <svg class="modal-icon-input" width="18px" height="18px">
                   <use href="./icons/symbol-defs.svg#icon-phone-black"></use>
                 </svg>
@@ -90,7 +94,7 @@
             <div class="modal-form-fill">
               <label for="Email">Пошта</label>
               <div class="input-wrapper">
-                <input type="email" id="Email" name="email" required />
+                <input type="email" id="Email" name="email" required autocomplete="email" />
                 <svg class="modal-icon-input" width="18px" height="18px">
                   <use href="./icons/symbol-defs.svg#icon-email-black"></use>
                 </svg>

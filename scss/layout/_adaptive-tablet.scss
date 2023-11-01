@@ -8,11 +8,19 @@
     padding: 0;
   }
 
-  .nav-list,
-  .list-contacts,
   .we-du-list,
   .section-title__hidden {
     display: none;
+  }
+
+  .list-contacts {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: start;
+  }
+
+  .list-contacts__menu-contact + .list-contacts__menu-contact {
+    margin-left: 0;
   }
 
   //sectoin hero
