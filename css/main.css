@@ -644,8 +644,9 @@ body {
   }
   .btn_modal_label {
     display: block;
-    position: relative;
-    right: 23px;
+    position: absolute;
+    right: 40px;
+    z-index: 1;
   }
   .btn_modal_line,
   .btn_modal_line::before,
@@ -665,30 +666,60 @@ body {
   }
   .btn_modal:checked ~ .btn_modal_label .btn_modal_line {
     transform: rotate(-45deg);
+    background-color: #2196f3;
   }
   .btn_modal:checked ~ .btn_modal_label .btn_modal_line::before {
     top: 0;
     transform: rotate(0);
+    background-color: #2196f3;
   }
   .btn_modal:checked ~ .btn_modal_label .btn_modal_line::after {
     top: 0;
     transform: rotate(90deg);
+    background-color: #2196f3;
   }
-  .nav-list {
+  .navigation {
+    align-items: normal;
+    order: 0;
+  }
+  .btn_modal:checked ~ .navigation {
     position: absolute;
+    margin: 0;
     top: 0;
     bottom: 0;
-    right: 0;
     left: 0;
     width: 100%;
     padding: 40px 48px;
     background-color: #fff;
+  }
+  .btn_modal:checked ~ .navigation .logo {
+    display: none;
   }
   .btn_modal:checked ~ .navigation .nav-list {
     display: flex;
     flex-direction: column;
     -moz-column-gap: 32px;
          column-gap: 32px;
+    height: 211px;
+    margin-left: 0;
+  }
+  .btn_modal:checked ~ .navigation .nav-list {
+    display: flex;
+    flex-direction: column;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+    height: 211px;
+    margin-left: 0;
+  }
+  .btn_modal:checked ~ .list-contacts {
+    display: flex;
+  }
+  .nav-list .nav-list__item {
+    position: static;
+  }
+  .nav-list .nav-list__item__link {
+    font-size: 40px;
+    letter-spacing: 0.8px;
   }
   .hero {
     padding: 60px 0;
