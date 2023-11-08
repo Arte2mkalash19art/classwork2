@@ -10,7 +10,9 @@
   .icon-header,
   .nav-list,
   .list-contacts,
-  .section-title__hidden {
+  .section-title__hidden,
+  .studio::after,
+  .nav-list__item__link::after {
     display: none;
   }
 
@@ -47,6 +49,7 @@
     .nav-list {
       display: block;
       margin-left: 0;
+
       .nav-list__item {
         height: 48px;
       }
@@ -83,11 +86,26 @@
       margin-top: 64px;
 
       .media-list-burger__item {
+        display: flex;
+        align-items: center;
+
+        &:nth-child(1):after,
+        &:nth-child(2):after,
+        &:nth-child(3):after {
+          content: '';
+          display: inline-block;
+          position: relative;
+          right: -8px;
+          width: 1px;
+          height: 22px;
+          background: rgba(33, 33, 33, 0.2);
+        }
         .media-list-burger__link {
           color: #2196f3;
           font-size: 18px;
           font-weight: 500;
           letter-spacing: 0.36px;
+          line-height: 22px;
         }
       }
     }
