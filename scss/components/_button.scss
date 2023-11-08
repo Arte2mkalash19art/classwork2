@@ -16,3 +16,28 @@
   letter-spacing: 0.96px;
   cursor: pointer;
 }
+
+.menu-button {
+  position: absolute;
+  right: 10px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  order: 1;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  z-index: 999;
+}
+
+.menu-button .menu-icon-close {
+  display: none;
+}
+.menu-button.is-open .menu-icon-close {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}

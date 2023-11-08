@@ -20,11 +20,19 @@
     <!-- Header -->
     <header class="header">
       <div class="container header-position">
-        <input type="checkbox" id="toggle" class="btn_modal" />
-        <label for="toggle" class="btn_modal_label">
-          <span class="btn_modal_line"></span>
-        </label>
-        <nav class="navigation">
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" fill="black">
+            <use class="menu-icon-close" href="./icons/symbol-defs.svg#menu-icon-close"></use>
+            <use class="icon-menu" href="./icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="navigation"  id="menu-container" data-menu>
           <a href="/" class="logo"
             ><span class="logo-web">Web</span><span class="logo-studio">Studio</span>
           </a>
@@ -35,27 +43,43 @@
             <li class="nav-list__item"><a class="nav-list__item__link" href="">Портфоліо</a></li>
             <li class="nav-list__item"><a class="nav-list__item__link" href="">Контакти</a></li>
           </ul>
+          <ul class="list-contacts">
+            <li class="list-contacts__menu-contact">
+              <a class="header-contact" href="mailto:info@devstudio.com">
+                <svg width="16" height="12" class="icon-header">
+                  <use href="./icons/symbol-defs.svg#icon-gmail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="list-contacts__menu-contact">
+              <a class="header-contact" href="tel:+380961111111">
+                <svg width="10" height="16" class="icon-header">
+                  <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="media-list-burger">
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">Instagram</a>
+            </li>
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">Twitter</a>
+            </li>
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">Facebook</a>
+            </li>
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">LinkedIn</a>
+            </li>
+          </ul>
         </nav>
-        <ul class="list-contacts">
-          <li class="list-contacts__menu-contact">
-            <a class="header-contact" href="mailto:info@devstudio.com">
-              <svg width="16" height="12" class="icon-header">
-                <use href="./icons/symbol-defs.svg#icon-gmail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="list-contacts__menu-contact">
-            <a class="header-contact" href="tel:+380961111111">
-              <svg width="10" height="16" class="icon-header">
-                <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
+    </div>
     </header>
+    
     <main>
       <!-- Section hero -->
       <section class="hero">
@@ -454,5 +478,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
