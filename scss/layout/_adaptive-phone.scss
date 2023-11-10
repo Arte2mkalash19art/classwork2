@@ -32,12 +32,13 @@
   .navigation.is-open {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    justify-content: space-between;
+    position: fixed;
     top: 0;
     left: 0;
     align-items: start;
     width: 100%;
-    height: 796px;
+    height: 100vh;
     background-color: #fff;
     padding: 40px 48px;
 
@@ -133,6 +134,10 @@
     padding: 25px 40%;
   }
 
+  .advantages-list .advantages-list__item .advantages-list__title {
+    text-align: center;
+  }
+
   //section-4
 
   .team-list {
@@ -217,7 +222,7 @@
 
   //modal
   .modal {
-    max-width: 100%;
+    max-width: 85%;
     height: 609px;
   }
 
