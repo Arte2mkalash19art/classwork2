@@ -87,6 +87,7 @@ body {
 }
 
 .backdrop {
+  z-index: 999;
   position: fixed;
   bottom: 0;
   top: 0;
@@ -419,6 +420,11 @@ body {
   margin-bottom: 94px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/section-hero2x.jpg");
+  }
+}
 .hero-title {
   width: 696px;
   margin: 0 auto;

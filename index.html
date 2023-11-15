@@ -32,7 +32,7 @@
             <use class="icon-menu" href="./icons/symbol-defs.svg#icon-menu"></use>
           </svg>
         </button>
-        <nav class="navigation"  id="menu-container" data-menu>
+        <nav class="navigation" id="menu-container" data-menu>
           <a href="/" class="logo"
             ><span class="logo-web">Web</span><span class="logo-studio">Studio</span>
           </a>
@@ -77,9 +77,8 @@
           </ul>
         </nav>
       </div>
-    </div>
     </header>
-    
+
     <main>
       <!-- Section hero -->
       <section class="hero">
@@ -202,15 +201,47 @@
           <h2 class="section-title section-title__hidden">Чим ми займаємося</h2>
           <ul class="we-du-list">
             <li class="we-du-list__item">
-              <img src="./images/coding.jpg" alt="photo-coding" height="294" width="370" srcset="./images/coding.jpg,./images/coding2x.jpg "/>
+              <picture>
+                <img
+                  srcset="
+                    ./images/coding.jpg   1x,
+                    ./images/coding2x.jpg 2x,
+                    ./images/coding3x.jpg 3x
+                  "
+                  src="./images/coding.jpg"
+                  alt="photo-coding"
+                  height="294"
+                  width="370"
+                />
+              </picture>
               <p class="we-du-list__text">Десктопні додатки</p>
             </li>
             <li class="we-du-list__item">
-              <img src="./images/design.jpg" alt="photo-design" height="294" width="370" />
+              <picture>
+                <img
+                  srcset="
+                    ./images/design.jpg   1x,
+                    ./images/design2x.jpg 2x,
+                    ./images/design3x.jpg 3x
+                  "
+                  src="./images/design.jpg"
+                  alt="photo-design"
+                  height="294"
+                  width="370"
+                />
+              </picture>
               <p class="we-du-list__text">Мобільні додатки</p>
             </li>
             <li class="we-du-list__item">
-              <img src="./images/style.jpg" alt="photo-style,colors" height="294" width="370" />
+              <picture>
+                <img
+                  srcset="./images/style.jpg 1x, ./images/style2x.jpg 2x, ./images/style3x.jpg 3x"
+                  src="./images/style.jpg"
+                  alt="photo-style,colors"
+                  height="294"
+                  width="370"
+                />
+              </picture>
               <p class="we-du-list__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -222,7 +253,18 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/ihor-demyanenko.jpg" alt="photo-ihora" width="270" height="260" />
+              <picture>
+                <img
+                  srcset="./images/ihor-demyanenko.jpg 270w,
+                ./images/ihor-demyanenko2x.jpg 540w
+                ./images/ihor-demyanenko3x.jpg 810w"
+                  sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, (min-width: 1200px) 25vw"
+                  src="./images/ihor-demyanenko.jpg"
+                  alt="photo-ihora"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="card-box">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p class="team-position">Product Designer</p>
@@ -259,7 +301,18 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/olga-repina.jpg" alt="photo-olga" width="270" height="260" />
+              <picture>
+                <img
+                  srcset="./images/olga-repina.jpg 270w,
+                  ./images/olga-repina2x.jpg 540w
+                  ./images/olga-repina3x.jpg 810w"
+                  sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, (min-width: 1200px) 25vw"
+                  src="./images/olga-repina.jpg"
+                  alt="photo-olga"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="card-box">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p class="team-position">Frontend Developer</p>
@@ -296,7 +349,18 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/mykola-tarasov.jpg" alt="photo-mykola" width="270" height="260" />
+              <picture>
+                <img
+                  srcset="./images/mykola-tarasov.jpg 270w,
+                  ./images/mykola-tarasov.2x.jpg 540w
+                  ./images/mykola-tarasov3x.jpg 810w"
+                  sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, (min-width: 1200px) 25vw"
+                  src="./images/mykola-tarasov.jpg"
+                  alt="photo-mykola"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="card-box">
                 <h3 class="team-name">Микола Тарасов</h3>
                 <p class="team-position">Marketing</p>
@@ -333,12 +397,19 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/mykhailo-yermakov.jpg"
-                alt="photo-mykhailo"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <img
+                  srcset="./images/mykhailo-yermakov.jpg 270w,
+                  ./images/mykhailo-yermakov2x.jpg 540w
+                  ./images/mykhailo-yermakov3x.jpg 810w"
+                  sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, (min-width: 1200px) 25vw"
+                  src="./images/mykhailo-yermakov.jpg"
+                  alt="photo-mykhailo"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+              <img />
               <div class="card-box">
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p class="team-position">UI Designer</p>
