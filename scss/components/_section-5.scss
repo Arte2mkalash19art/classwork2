@@ -10,20 +10,20 @@
     border-radius: 4px;
     cursor: pointer;
 
+    .client-logo {
+      width: 106px;
+      height: 60px;
+      margin: 16px 32px;
+      fill: $icon-color;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     &:hover .client-logo {
       fill: $hover-color;
     }
 
     &:hover {
       outline: 1px solid $hover-color;
-    }
-
-    .client-logo {
-      width: 106px;
-      height: 60px;
-      margin: 16px 32px;
-      fill: $icon-color;
-      transition: fill, outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
