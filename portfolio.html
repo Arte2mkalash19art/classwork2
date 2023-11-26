@@ -1,0 +1,185 @@
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-position">
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" fill="black">
+            <use class="menu-icon-close" href="./icons/symbol-defs.svg#menu-icon-close"></use>
+            <use class="icon-menu" href="./icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <nav class="navigation" id="menu-container" data-menu>
+          <a href="/" class="logo"
+            ><span class="logo-web">Web</span><span class="logo-studio">Studio</span>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__item__link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__item__link studio" href="/">Портфоліо</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__item__link" href="#footer">Контакти</a>
+            </li>
+          </ul>
+          <ul class="list-contacts">
+            <li class="list-contacts__menu-contact">
+              <a class="header-contact" href="mailto:info@devstudio.com">
+                <svg width="16" height="12" class="icon-header">
+                  <use href="./icons/symbol-defs.svg#icon-gmail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="list-contacts__menu-contact">
+              <a class="header-contact" href="tel:+380961111111">
+                <svg width="10" height="16" class="icon-header">
+                  <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="media-list-burger">
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">Instagram</a>
+            </li>
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">Twitter</a>
+            </li>
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">Facebook</a>
+            </li>
+            <li class="media-list-burger__item">
+              <a class="media-list-burger__link">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <ul class="portfolio-menu-list">
+        <li><button class="portfolio-menu-list-item">Усі</button></li>
+        <li><button class="portfolio-menu-list-item">Веб-сайти</button></li>
+        <li><button class="portfolio-menu-list-item">Додатки</button></li>
+        <li><button class="portfolio-menu-list-item">Дизайн</button></li>
+        <li><button class="portfolio-menu-list-item">Маркетинг</button></li>
+      </ul>
+
+      <div data-aos="container">
+        <ul class="porfolio-list">
+          <li class="portfolio-list__item">
+            <img src="./images-porfolio/website-tehnokrak.jpg" alt="website-tehnokrak" />
+            <h3 class="porfolio-list__project-name">Технокряк</h3>
+            <p class="porfolio-list__type-task">Веб-сайт</p>
+            <p class="porfolio-list__discription"></p>
+          </li>
+          <li class="portfolio-list__item">
+            <img src="./images-porfolio/basketball-players.jpg" alt="basketball-players" />
+            <h3 class="porfolio-list__project-name">Постер New Orlean vs Golden Star</h3>
+            <p class="porfolio-list__type-task">Дизайн</p>
+            <p class="porfolio-list__discription"></p>
+          </li>
+          <li class="portfolio-list__item">
+            <img src="./images-porfolio/logo-seafood.jpg" alt="logo-seafood" />
+            <h3 class="porfolio-list__project-name">Ресторан Seafood</h3>
+            <p class="porfolio-list__type-task">Додаток</p>
+          </li>
+          <li class="portfolio-list__item">
+            <img src="./images-porfolio/headphones.jpg" alt="headphones" />
+            <h3 class="porfolio-list__project-name">Проєкт Prime</h3>
+            <p class="porfolio-list__type-task">Маркетинг</p>
+            <p class="porfolio-list__discription"></p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container flex">
+        <address class="address-container">
+          <a href="/" class="logo">
+            <span class="logo-web-footer">Web</span><span class="logo-studio-footer">Studio</span>
+          </a>
+          <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="footer-contacs-list">
+            <li class="footer-contacs-item">
+              <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer-contacs-item">
+              <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+        <div class="media-box">
+          <p class="media-title">приєднуйтесь</p>
+          <ul class="footer-media-list">
+            <li>
+              <a href="/">
+                <svg width="44" height="44" class="icon-footer">
+                  <use href="./icons/symbol-defs.svg#icon-instagram-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <svg width="44" height="44" class="icon-footer">
+                  <use href="./icons/symbol-defs.svg#icon-twitter-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <svg width="44" height="44" class="icon-footer">
+                  <use href="./icons/symbol-defs.svg#icon-facebook-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <svg width="44" height="44" class="icon-footer">
+                  <use href="./icons/symbol-defs.svg#icon-in-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="media-form">
+          <p class="media-title">Підпишіться на розсилку</p>
+          <div class="footer-media-list">
+            <input class="media-input-email" type="email" placeholder="E-mail" />
+            <a href="https://t.me/ProstoBlockUA" target="_blank" class="media-link">
+              Підписатися<svg class="footer-media-icon-send" width="24" height="24">
+                <use href="./icons/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
