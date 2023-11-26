@@ -1,15 +1,17 @@
 .portfolio-menu-list {
   margin-top: 94px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 8px;
+  row-gap: 15px;
 
   &-item {
     padding: 6px 22px;
     border: none;
     border-radius: 4px;
     background: #f5f4fa;
-    color: blue;
+    color: black;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
@@ -18,7 +20,7 @@
 
     &:hover {
       color: white;
-      background-color: white;
+      background-color: $primalcolor;
       cursor: pointer;
     }
   }
@@ -26,8 +28,12 @@
 
 .portfolio-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   column-gap: 30px;
+  row-gap: 32px;
+  margin-top: 50px;
+  margin-bottom: 94px;
 
   &__item {
     width: 370px;
@@ -44,11 +50,30 @@
       height: 294px;
     }
   }
+
+  &__project-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px;
+  }
+
+  &__type-task {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.48px;
+  }
+
+  .portfolio-textbox {
+    padding: 20px 24px;
+  }
 }
 
-.portfolio-list__item {
-  width: 370px;
-  height: 404px;
-  background: #fff;
-  border: 1px solid #eee;
+@media screen and (max-width: 767px) {
+  .portfolio-menu-list {
+    justify-content: left;
+  }
 }
